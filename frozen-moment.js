@@ -41,6 +41,7 @@
     'diff',
     'valueOf',
     'unix',
+    'add',
     'daysInMonth',
     'toArray',
     'toJSON',
