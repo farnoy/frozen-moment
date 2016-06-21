@@ -120,7 +120,7 @@
     return function () {
       var thawed = this.thaw();
       var result = thawed[arguments[0]].apply(thawed, arguments);
-      return (arguments[1](result) ? result.freeze() : result);
+      return (arguments[1].apply(null, [result]) ? result.freeze() : result);
     };
   }
   function frozenIfArgumentsMethodGenerator(name, isMoment, upstreamProto) {
