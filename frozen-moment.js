@@ -1,8 +1,8 @@
 (function (global, factory) {
   if (typeof exports === 'object') {
-    module.exports = factory(require('moment'));
+    module.exports = factory(require('moment-timezone'));
   } else if (typeof define === 'function' && define.amd) {
-    define(['moment'], factory);
+    define(['moment-timezone'], factory);
   } else {
     global.moment = factory(global.moment);
   }
