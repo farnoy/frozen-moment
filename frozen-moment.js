@@ -233,6 +233,7 @@
   momentProto.isFrozen = function isFrozen() {
     return false;
   };
+  momentProto.hashCode = momentProto.valueOf;
   momentProto.freeze = freezeMoment;
 
   moment.frozen = function frozen() {
